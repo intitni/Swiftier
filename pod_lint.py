@@ -1,6 +1,6 @@
 import os
 
-podspec = "ExplodingNumbers.podspec"
+podspec = "Swiftier.podspec"
 allow_warning = True
 
 # list all the sources of your dependencies

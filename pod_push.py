@@ -1,6 +1,6 @@
 import os
 
-podspec = "ExplodingNumbers.podspec"
+podspec = "Swiftier.podspec"
 specs = "jrmf-specs"
 allow_warnings = True
 
