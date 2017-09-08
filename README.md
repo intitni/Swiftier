@@ -4,7 +4,7 @@
 
 You may now use let and var to declare the type of a variable, when the type can be inffered by compiler.
 
-They are equivalent to `const __auto_type` and `__auto_type`. If ObjC++ is used, they are equivalent to `auto const` and `auto`.
+They are equivalent to `__auto_type const` and `__auto_type`. If ObjC++ is used, they are equivalent to `auto const` and `auto`.
 
 Usage:
 

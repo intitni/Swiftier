@@ -12,7 +12,7 @@
 #if defined(__cplusplus)
 #define let auto const
 #else
-#define let const __auto_type
+#define let __auto_type const 
 #endif
 
 #if defined(__cplusplus)
