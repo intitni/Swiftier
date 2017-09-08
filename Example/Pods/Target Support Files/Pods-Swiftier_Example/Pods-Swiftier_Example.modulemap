@@ -1,0 +1,6 @@
+framework module Pods_Swiftier_Example {
+  umbrella header "Pods-Swiftier_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

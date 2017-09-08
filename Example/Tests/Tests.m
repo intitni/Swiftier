@@ -7,6 +7,7 @@
 //
 
 @import XCTest;
+@import Swiftier;
 
 @interface Tests : XCTestCase
 
@@ -26,9 +27,70 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testNSArrayMap
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    let array = @[@1,@2,@3];
+    NSArray<NSNumber *> *new = [array swt_map:^NSNumber*(NSNumber* obj){
+        return @(obj.intValue + 1);
+    }];
+    
+    XCTAssertEqual(new[0].intValue, 2);
+    XCTAssertEqual(new[1].intValue, 3);
+    XCTAssertEqual(new[2].intValue, 4);
+}
+
+- (void)testNSArrayFlatMap
+{
+    let array = @[@1,[NSNull null],@3];
+    NSArray<NSNumber *> *new = [array swt_flatMap:^NSNumber*(NSNumber* obj){
+        return @(obj.intValue + 1);
+    }];
+    
+    XCTAssertEqual(new[0].intValue, 2);
+    XCTAssertEqual(new[1].intValue, 4);
+}
+
+- (void)testNSArrayFilter {
+    let array = @[@1,@2,@3];
+    NSArray<NSNumber *> *new = [array swt_filter:^BOOL (NSNumber* obj){
+        return obj.intValue > 1;
+    }];
+    
+    XCTAssertEqual(new[0].intValue, 2);
+    XCTAssertEqual(new[1].intValue, 3);
+}
+
+- (void)testNSMutableArrayMap
+{
+    let array = [[NSMutableArray alloc] initWithObjects:@1, @2, @3, nil];
+    NSArray<NSNumber *> *new = [array swt_map:^NSNumber*(NSNumber* obj){
+        return @(obj.intValue + 1);
+    }];
+    
+    XCTAssertEqual(new[0].intValue, 2);
+    XCTAssertEqual(new[1].intValue, 3);
+    XCTAssertEqual(new[2].intValue, 4);
+}
+
+- (void)testNSMutableArrayFlatMap
+{
+    let array = [[NSMutableArray alloc] initWithObjects:@1, [NSNull null], @3, nil];
+    NSArray<NSNumber *> *new = [array swt_flatMap:^NSNumber*(NSNumber* obj){
+        return @(obj.intValue + 1);
+    }];
+    
+    XCTAssertEqual(new[0].intValue, 2);
+    XCTAssertEqual(new[1].intValue, 4);
+}
+
+- (void)testNSMutableArrayFilter {
+    let array = @[@1,@2,@3];
+    NSArray<NSNumber *> *new = [array swt_filter:^BOOL (NSNumber* obj){
+        return obj.intValue > 1;
+    }];
+    
+    XCTAssertEqual(new[0].intValue, 2);
+    XCTAssertEqual(new[1].intValue, 3);
 }
 
 @end

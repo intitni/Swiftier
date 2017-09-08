@@ -1,0 +1,6 @@
+framework module Swiftier {
+  umbrella header "Swiftier-umbrella.h"
+
+  export *
+  module * { export * }
+}

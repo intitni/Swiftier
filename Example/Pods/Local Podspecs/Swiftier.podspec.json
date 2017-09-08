@@ -1,0 +1,22 @@
+{
+  "name": "Swiftier",
+  "version": "0.1.0",
+  "summary": "A short description of Swiftier.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/int123c/Swiftier",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "int123c": "int123c@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/int123c/Swiftier.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Swiftier/Classes/**/*"
+}
