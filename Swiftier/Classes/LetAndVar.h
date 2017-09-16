@@ -21,4 +21,6 @@
 #define var __auto_type
 #endif
 
+#define guard(condition) if(condition){}
+
 #endif /* LetAndVar_h */
