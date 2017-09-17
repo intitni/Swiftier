@@ -1,9 +1,9 @@
 {
   "name": "Swiftier",
-  "version": "0.1.0",
-  "summary": "A short description of Swiftier.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/int123c/Swiftier",
+  "version": "0.1.2",
+  "summary": "Swiftier Objc",
+  "description": "Swiftier is a collection of enhancements that make Objc not too bad comparing with Swift.",
+  "homepage": "https://bitbucket.org/jrmfchina/swiftier",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "int123c": "int123c@gmail.com"
   },
   "source": {
-    "git": "https://github.com/int123c/Swiftier.git",
-    "tag": "0.1.0"
+    "git": "https://bitbucket.org/jrmfchina/swiftier.git",
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"

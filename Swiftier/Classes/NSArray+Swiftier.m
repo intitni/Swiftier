@@ -7,7 +7,7 @@
 //
 
 #import "NSArray+Swiftier.h"
-#import "LetAndVar.h"
+#import "SwiftierLetAndVar.h"
 
 @implementation NSArray (Swiftier)
 

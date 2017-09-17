@@ -35,7 +35,15 @@ guard (a != nil) else { return nil; }
 [a continueToSomeOtherThings];
 ```
 
-## ForEach, Map, FlatMap, Filter
+## Inline foreach
+
+When collection has type information, we may use 
+
+```objc
+foreach(element, collection) { ... }
+```
+
+## Block based Foreach, Map, FlatMap, Filter
 
 This four methods are available for `NSArray` and `NSMutableArray`. They each takes in a block, and runs the block to each element inside.
 
@@ -64,6 +72,10 @@ let mappedArray = [array swt_map:^AnotherType(NSNumber *number) {
 }];
 // result -> @[AnotherType(@1), AnotherType(@3)];
 ```
+
+## Safe KeyPath
+
+`keyPath(object, path)` instead of stringly typed keyPath.
 
 ## Safe Copy
 

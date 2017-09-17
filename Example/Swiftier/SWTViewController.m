@@ -7,6 +7,7 @@
 //
 
 #import "SWTViewController.h"
+@import Swiftier;
 
 @interface SWTViewController ()
 
@@ -17,7 +18,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	keyPath(self, view);
+    let numbers = (NSArray <NSNumber *>*)@[@1, @2];
+    foreach(number, numbers) {
+        let x = number.intValue;
+        NSLog(@"%@", @(x));
+    }
 }
 
 - (void)didReceiveMemoryWarning
