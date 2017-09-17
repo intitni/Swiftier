@@ -13,6 +13,28 @@ let array = @[@1,@2,@3];
 var number = 1;
 ```
 
+## Guard
+
+You may use `guard` to guard a specific condition now. `guard (condition)` is equivalent to `if(condition){}`, a more expressive way to do something when a condition is not met, if you call `guard (condition)` alone, it will do nothing, you should use the "swift way" to guard things out.
+
+```objc
+guard (condition) else { /* do something else */ }
+```
+
+Which is equivalent to swift's
+
+```swift
+guard condition else { /* do something else */ }
+```
+
+Which is good for the cases when you need to return nil when some conditions are not met.
+
+```objc
+let a = somethingElse;
+guard (a != nil) else { return nil; }
+[a continueToSomeOtherThings];
+```
+
 ## ForEach, Map, FlatMap, Filter
 
 This four methods are available for `NSArray` and `NSMutableArray`. They each takes in a block, and runs the block to each element inside.
