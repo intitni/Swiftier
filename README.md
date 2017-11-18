@@ -1,5 +1,7 @@
 # Swiftier
 
+`import Swiftier;` to use the following.
+
 ## Let and Var
 
 You may now use let and var to declare the type of a variable, when the type can be inffered by compiler.
@@ -35,6 +37,19 @@ guard (a != nil) else { return nil; }
 [a continueToSomeOtherThings];
 ```
 
+## Safely Unwrap
+
+Checks a potential nill/null object, returns the computed value or, if the object is nill, returns the default value. Good when the object is extremely long to express (often happens in objc) that you don't have to type things twice.
+
+```objc
+- (void)updateTextToMatchAButton {
+    self.label.title = safelyUnwrap(self.someView.button.title, defaultTitle);
+    
+    // instead of
+    self.label.title = self.someView.button.title ? self.someView.button.title : defaultTitle;
+}
+```
+
 ## Inline foreach
 
 When collection has type information, we may use 
@@ -67,7 +82,7 @@ let filteredArray = [array swt_filter:^BOOL(NSNumber *number) {
 // prints: 1 2 3
 
 let array = @[@1, null, @3];
-let mappedArray = [array swt_map:^AnotherType(NSNumber *number) {
+let mappedArray = [array swt_flatMap:^AnotherType(NSNumber *number) {
     return [AnotherType initWith:number];
 }];
 // result -> @[AnotherType(@1), AnotherType(@3)];
@@ -75,11 +90,11 @@ let mappedArray = [array swt_map:^AnotherType(NSNumber *number) {
 
 ## Safe KeyPath
 
-`keyPath(object, path)` instead of stringly typed keyPath.
+`keyPath(object, path)` to get compiler checked key path instead of stringly typed one.
 
-## Safe Copy
+## Infomative Copy
 
-Some collection types now have type information in copy or mutableCopy.
+Some collection types now have type information in `copy` or `mutableCopy`.
 
 ## Boxing Structs
 
