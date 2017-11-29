@@ -1,7 +1,7 @@
 import os
 
 podspec = "Swiftier.podspec"
-specs = "jrmf-specs"
+specs = "algebragame"
 allow_warnings = True
 
 command = "pod repo push " + specs + " " + podspec
