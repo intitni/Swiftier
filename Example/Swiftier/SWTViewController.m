@@ -24,6 +24,9 @@
         let x = number.intValue;
         NSLog(@"%@", @(x));
     }
+    let block = ^{};
+    safeBlock(block);
+    mainQueueBlock(block);
 }
 
 - (void)didReceiveMemoryWarning

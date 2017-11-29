@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Swiftier'
-  s.version          = '0.1.3'
+  s.version          = '0.1.5'
   s.summary          = 'Swiftier Objc'
 
 # This description is used to generate tags and improve search results.
@@ -19,11 +19,11 @@ Pod::Spec.new do |s|
 
   s.description      = 'Swiftier is a collection of enhancements that make Objc not too bad comparing with Swift.'
 
-  s.homepage         = 'https://bitbucket.org/jrmfchina/swiftier'
+  s.homepage         = 'https://github.com/'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'int123c' => 'int123c@gmail.com' }
-  s.source           = { :git => 'https://bitbucket.org/jrmfchina/swiftier.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Algebragame/swiftier.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

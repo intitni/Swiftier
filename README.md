@@ -37,6 +37,25 @@ guard (a != nil) else { return nil; }
 [a continueToSomeOtherThings];
 ```
 
+## Safe Block
+
+Run a nullable block without null checking.
+
+```objc
+safeBlock(block, arguments);
+
+// is equivalent to
+
+if (block) block(arguments);
+```
+
+And safely run block on a specific thread is also possible with
+
+```objc
+asyncQueueBlock(queue, block, ...);
+mainQueueBlock(block, ...);
+```
+
 ## Safely Unwrap
 
 Checks a potential nill/null object, returns the computed value or, if the object is nill, returns the default value. Good when the object is extremely long to express (often happens in objc) that you don't have to type things twice.
