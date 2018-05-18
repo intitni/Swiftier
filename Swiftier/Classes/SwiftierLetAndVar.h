@@ -1,11 +1,3 @@
-//
-//  LetAndVar.h
-//  Pods
-//
-//  Created by Inti Guo on 08/09/2017.
-//
-//
-
 #ifndef LetAndVar_h
 #define LetAndVar_h
 

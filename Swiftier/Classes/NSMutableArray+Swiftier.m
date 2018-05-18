@@ -1,11 +1,3 @@
-//
-//  NSMutableArray+Swiftier.m
-//  Pods
-//
-//  Created by Inti Guo on 08/09/2017.
-//
-//
-
 #import "NSMutableArray+Swiftier.h"
 #import "SwiftierLetAndVar.h"
 

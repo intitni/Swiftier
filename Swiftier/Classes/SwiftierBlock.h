@@ -1,10 +1,3 @@
-//
-//  SwiftierBlock.h
-//  Swiftier
-//
-//  Created by Shangxin Guo on 29/11/2017.
-//
-
 #ifndef SwiftierBlock_h
 #define SwiftierBlock_h
 

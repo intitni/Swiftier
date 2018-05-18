@@ -1,10 +1,3 @@
-//
-//  SwiftierKeyPath.h
-//  Swiftier
-//
-//  Created by Shangxin Guo on 18/09/2017.
-//
-
 #ifndef SwiftierKeyPath_h
 #define SwiftierKeyPath_h
 

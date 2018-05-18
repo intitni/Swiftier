@@ -1,10 +1,3 @@
-//
-//  SwiftierFastEnumeration.h
-//  Swiftier
-//
-//  Created by Shangxin Guo on 18/09/2017.
-//
-
 @protocol SwiftierFastEnumeration <NSFastEnumeration>
 - (id)swt_enumeratedType;
 @end

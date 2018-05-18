@@ -1,11 +1,3 @@
-//
-//  NSArray+Swiftier.m
-//  
-//
-//  Created by Inti Guo on 08/09/2017.
-//
-//
-
 #import "NSArray+Swiftier.h"
 #import "SwiftierLetAndVar.h"
 
