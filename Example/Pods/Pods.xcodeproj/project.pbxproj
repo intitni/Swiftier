@@ -43,7 +43,7 @@
 /* Begin PBXFileReference section */
 		01E5F46944BA24DEA0507A0CE7FFC56F /* Swiftier-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Swiftier-dummy.m"; sourceTree = "<group>"; };
 		106388DC2F42018FA8626EA9A7B5584D /* Pods-Swiftier_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Swiftier_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1344AFB6213CDEF9002966FA /* Swiftier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swiftier.h; sourceTree = "<group>"; };
+		1344AFB6213CDEF9002966FA /* Swiftier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Swiftier.h; path = Swiftier/Classes/Swiftier.h; sourceTree = "<group>"; };
 		1423390F05B7EA6532716CC194B07ED7 /* Pods_Swiftier_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swiftier_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCC08A28B06A604F77258B6945E4E1E /* SwiftierUnwrap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftierUnwrap.h; path = Swiftier/Classes/SwiftierUnwrap.h; sourceTree = "<group>"; };
 		257FC376FA4815F8EF99C6625A00C794 /* Pods-Swiftier_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Swiftier_Tests.modulemap"; sourceTree = "<group>"; };
