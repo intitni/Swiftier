@@ -43,15 +43,16 @@
 /* Begin PBXFileReference section */
 		01E5F46944BA24DEA0507A0CE7FFC56F /* Swiftier-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Swiftier-dummy.m"; sourceTree = "<group>"; };
 		106388DC2F42018FA8626EA9A7B5584D /* Pods-Swiftier_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Swiftier_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1423390F05B7EA6532716CC194B07ED7 /* Pods_Swiftier_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Swiftier_Tests.framework; path = "Pods-Swiftier_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1344AFB6213CDEF9002966FA /* Swiftier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swiftier.h; sourceTree = "<group>"; };
+		1423390F05B7EA6532716CC194B07ED7 /* Pods_Swiftier_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swiftier_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCC08A28B06A604F77258B6945E4E1E /* SwiftierUnwrap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftierUnwrap.h; path = Swiftier/Classes/SwiftierUnwrap.h; sourceTree = "<group>"; };
-		257FC376FA4815F8EF99C6625A00C794 /* Pods-Swiftier_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Swiftier_Tests.modulemap"; sourceTree = "<group>"; };
+		257FC376FA4815F8EF99C6625A00C794 /* Pods-Swiftier_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Swiftier_Tests.modulemap"; sourceTree = "<group>"; };
 		2D79F69A03068AC745BDC0FD6B81354E /* Pods-Swiftier_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swiftier_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2F710F113049B67ED002590FF38EEC90 /* NSMutableArray+Swiftier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Swiftier.h"; path = "Swiftier/Classes/NSMutableArray+Swiftier.h"; sourceTree = "<group>"; };
 		3005F36BB103FAAB8D6271D59CE516D8 /* SwiftierGuard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftierGuard.h; path = Swiftier/Classes/SwiftierGuard.h; sourceTree = "<group>"; };
 		314721186F6FFBF7C427801334CC8EE1 /* Pods-Swiftier_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swiftier_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3F25B8AFF700F5ACDBEDC324FC7266D6 /* Pods_Swiftier_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Swiftier_Example.framework; path = "Pods-Swiftier_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		405AEEEF043D365D432ECFF7EEF1272D /* Swiftier.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Swiftier.modulemap; sourceTree = "<group>"; };
+		3F25B8AFF700F5ACDBEDC324FC7266D6 /* Pods_Swiftier_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swiftier_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		405AEEEF043D365D432ECFF7EEF1272D /* Swiftier.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Swiftier.modulemap; sourceTree = "<group>"; };
 		44664FF47D562816729F759F1FA8E270 /* SwiftierSafeCopy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftierSafeCopy.h; path = Swiftier/Classes/SwiftierSafeCopy.h; sourceTree = "<group>"; };
 		449CBC5773A83DE44D6FF74A078FD3BA /* SwiftierBoxing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftierBoxing.h; path = Swiftier/Classes/SwiftierBoxing.h; sourceTree = "<group>"; };
 		5191DC9D121A896AD483643E303018C7 /* Pods-Swiftier_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swiftier_Example-dummy.m"; sourceTree = "<group>"; };
@@ -62,15 +63,15 @@
 		6051C23BA52F287467C2F8436C59D18E /* Pods-Swiftier_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swiftier_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		707D88DAF107661B30891E171C652FC6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		752BF86EED4564FF872C9279A7A86545 /* Pods-Swiftier_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Swiftier_Example.modulemap"; sourceTree = "<group>"; };
+		752BF86EED4564FF872C9279A7A86545 /* Pods-Swiftier_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Swiftier_Example.modulemap"; sourceTree = "<group>"; };
 		7CA0C98AB9A1E654B4566813816C4EB5 /* Swiftier-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swiftier-umbrella.h"; sourceTree = "<group>"; };
 		930ACDDA14E352EBDD215401154AD705 /* Swiftier-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swiftier-prefix.pch"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		957A23CEE783911E608AA023BFBD9CCD /* Pods-Swiftier_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Swiftier_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A274FEFFEE79CC0E033D3E0CCAB5688E /* Pods-Swiftier_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swiftier_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A490E2D8B3561839F65BB056A8D259C4 /* NSArray+Swiftier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Swiftier.h"; path = "Swiftier/Classes/NSArray+Swiftier.h"; sourceTree = "<group>"; };
 		A62D0A0611293BC17359843659D9AFD7 /* NSMutableArray+Swiftier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+Swiftier.m"; path = "Swiftier/Classes/NSMutableArray+Swiftier.m"; sourceTree = "<group>"; };
-		B1F3398B15F4E737D5BD0F7FB1EDB806 /* Swiftier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Swiftier.framework; path = Swiftier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F3398B15F4E737D5BD0F7FB1EDB806 /* Swiftier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swiftier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC139C50643068BD4B2CCE2540066C7D /* Pods-Swiftier_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Swiftier_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C19C1007C5207DBE00EE8A9F7B07A233 /* Pods-Swiftier_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Swiftier_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D2D3C8A1AF744A3F26D5D936E835AC0A /* Pods-Swiftier_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swiftier_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +174,7 @@
 				44664FF47D562816729F759F1FA8E270 /* SwiftierSafeCopy.h */,
 				1BCC08A28B06A604F77258B6945E4E1E /* SwiftierUnwrap.h */,
 				47BDE865D32BD085515FCB065FA9E6F7 /* Support Files */,
+				1344AFB6213CDEF9002966FA /* Swiftier.h */,
 			);
 			name = Swiftier;
 			path = ../..;
