@@ -174,8 +174,8 @@
 				541B6D3FD218E73EB957A486D3B9C7E5 /* SwiftierLetAndVar.h */,
 				44664FF47D562816729F759F1FA8E270 /* SwiftierSafeCopy.h */,
 				1BCC08A28B06A604F77258B6945E4E1E /* SwiftierUnwrap.h */,
-				47BDE865D32BD085515FCB065FA9E6F7 /* Support Files */,
 				1344AFB6213CDEF9002966FA /* Swiftier.h */,
+				47BDE865D32BD085515FCB065FA9E6F7 /* Support Files */,
 			);
 			name = Swiftier;
 			path = ../..;
