@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0213F2FA2E8019D854A4C1D4460012D7 /* NSMutableArray+Swiftier.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F710F113049B67ED002590FF38EEC90 /* NSMutableArray+Swiftier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1344AFB7213CE14F002966FA /* Swiftier.h in Headers */ = {isa = PBXBuildFile; fileRef = 1344AFB6213CDEF9002966FA /* Swiftier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13AE80100C439FAB79573CE2811C9707 /* Pods-Swiftier_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191DC9D121A896AD483643E303018C7 /* Pods-Swiftier_Example-dummy.m */; };
 		15DC8BFE18BB6E056CCD5529F1DCF9EF /* SwiftierGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 3005F36BB103FAAB8D6271D59CE516D8 /* SwiftierGuard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25ED24F9ED23515E1F58D68C4F041228 /* SwiftierFastEnumeration.h in Headers */ = {isa = PBXBuildFile; fileRef = F0A8E75E93497F2CA49DC47EC3E8935E /* SwiftierFastEnumeration.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -265,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47FD470A67301A455E057D2F63C63CC6 /* NSArray+Swiftier.h in Headers */,
+				1344AFB7213CE14F002966FA /* Swiftier.h in Headers */,
 				0213F2FA2E8019D854A4C1D4460012D7 /* NSMutableArray+Swiftier.h in Headers */,
 				A7C590F14AE3400CA8D9965223CE0095 /* Swiftier-umbrella.h in Headers */,
 				D427AB6C7F0C8525A003D72FC6D82733 /* SwiftierBlock.h in Headers */,
