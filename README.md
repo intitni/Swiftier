@@ -1,5 +1,7 @@
 # Swiftier
 
+Many of the codes are copied from PSPDFKit's articles about writing Swiftier Objective-C.
+
 `import Swiftier;` to use the following.
 
 ## Let and Var
