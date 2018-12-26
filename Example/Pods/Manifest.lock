@@ -1,16 +1,16 @@
 PODS:
-  - Swiftier (0.1.3)
+  - Swiftier (0.1.6)
 
 DEPENDENCIES:
   - Swiftier (from `../`)
 
 EXTERNAL SOURCES:
   Swiftier:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Swiftier: 13c3d3d2d6795a7889d1e0a30f53038c2808db0e
+  Swiftier: 31edb0f9c3a1ce69be971872054ee0587cc7795f
 
 PODFILE CHECKSUM: c5e1ac1330bdad54197ad4efb755ab18195d64ee
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.6.0.beta.2

@@ -1,9 +1,9 @@
 {
   "name": "Swiftier",
-  "version": "0.1.3",
+  "version": "0.1.6",
   "summary": "Swiftier Objc",
   "description": "Swiftier is a collection of enhancements that make Objc not too bad comparing with Swift.",
-  "homepage": "https://bitbucket.org/jrmfchina/swiftier",
+  "homepage": "https://github.com/",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "int123c": "int123c@gmail.com"
   },
   "source": {
-    "git": "https://bitbucket.org/jrmfchina/swiftier.git",
-    "tag": "0.1.3"
+    "git": "https://github.com/Algebragame/swiftier.git",
+    "tag": "0.1.6"
   },
   "platforms": {
     "ios": "8.0"

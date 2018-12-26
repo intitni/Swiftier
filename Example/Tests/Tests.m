@@ -15,20 +15,17 @@
 
 @implementation Tests
 
-- (void)setUp
-{
+- (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
-- (void)tearDown
-{
+- (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testNSArrayMap
-{
+- (void)testNSArrayMap {
     let array = @[@1,@2,@3];
     NSArray<NSNumber *> *new = [array swt_map:^NSNumber*(NSNumber* obj){
         return @(obj.intValue + 1);
@@ -39,8 +36,7 @@
     XCTAssertEqual(new[2].intValue, 4);
 }
 
-- (void)testNSArrayFlatMap
-{
+- (void)testNSArrayFlatMap {
     let array = @[@1,[NSNull null],@3];
     NSArray<NSNumber *> *new = [array swt_flatMap:^NSNumber*(NSNumber* obj){
         return @(obj.intValue + 1);
@@ -60,8 +56,20 @@
     XCTAssertEqual(new[1].intValue, 3);
 }
 
-- (void)testNSMutableArrayMap
-{
+- (void)testNSArrayFirstWhere {
+    let array = @[@1,@2,@3,@4,@5];
+    NSNumber * shouldBe2 = [array swt_firstWhere:^BOOL (NSNumber *obj){
+        return obj.integerValue >= 2;
+    }];
+    NSNumber * shouldBe4 = [array swt_firstWhere:^BOOL (NSNumber *obj){
+        return obj.integerValue >= 4;
+    }];
+    
+    XCTAssertEqual(shouldBe2.integerValue, 2);
+    XCTAssertEqual(shouldBe4.integerValue, 4);
+}
+
+- (void)testNSMutableArrayMap {
     let array = [[NSMutableArray alloc] initWithObjects:@1, @2, @3, nil];
     NSArray<NSNumber *> *new = [array swt_map:^NSNumber*(NSNumber* obj){
         return @(obj.intValue + 1);
@@ -72,8 +80,7 @@
     XCTAssertEqual(new[2].intValue, 4);
 }
 
-- (void)testNSMutableArrayFlatMap
-{
+- (void)testNSMutableArrayFlatMap {
     let array = [[NSMutableArray alloc] initWithObjects:@1, [NSNull null], @3, nil];
     NSArray<NSNumber *> *new = [array swt_flatMap:^NSNumber*(NSNumber* obj){
         return @(obj.intValue + 1);
@@ -84,13 +91,26 @@
 }
 
 - (void)testNSMutableArrayFilter {
-    let array = @[@1,@2,@3];
+    let array = @[@1,@2,@3].mutableCopy;
     NSArray<NSNumber *> *new = [array swt_filter:^BOOL (NSNumber* obj){
         return obj.intValue > 1;
     }];
     
     XCTAssertEqual(new[0].intValue, 2);
     XCTAssertEqual(new[1].intValue, 3);
+}
+
+- (void)testNSMutableArrayFirstWhere {
+    let array = @[@1,@2,@3,@4,@5].mutableCopy;
+    NSNumber * shouldBe2 = [array swt_firstWhere:^BOOL (NSNumber *obj){
+        return obj.integerValue >= 2;
+    }];
+    NSNumber * shouldBe4 = [array swt_firstWhere:^BOOL (NSNumber *obj){
+        return obj.integerValue >= 4;
+    }];
+    
+    XCTAssertEqual(shouldBe2.integerValue, 2);
+    XCTAssertEqual(shouldBe4.integerValue, 4);
 }
 
 @end
