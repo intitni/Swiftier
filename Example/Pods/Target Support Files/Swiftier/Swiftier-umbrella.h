@@ -12,6 +12,7 @@
 
 #import "NSArray+Swiftier.h"
 #import "NSMutableArray+Swiftier.h"
+#import "Swiftier.h"
 #import "SwiftierBlock.h"
 #import "SwiftierBoxing.h"
 #import "SwiftierFastEnumeration.h"

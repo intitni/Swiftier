@@ -64,9 +64,13 @@
     NSNumber * shouldBe4 = [array swt_firstWhere:^BOOL (NSNumber *obj){
         return obj.integerValue >= 4;
     }];
+    NSNumber * shouldBeNil = [array swt_firstWhere:^BOOL (NSNumber *obj){
+        return obj.integerValue >= 10;
+    }];
     
     XCTAssertEqual(shouldBe2.integerValue, 2);
     XCTAssertEqual(shouldBe4.integerValue, 4);
+    XCTAssertNil(shouldBeNil);
 }
 
 - (void)testNSMutableArrayMap {
@@ -108,9 +112,13 @@
     NSNumber * shouldBe4 = [array swt_firstWhere:^BOOL (NSNumber *obj){
         return obj.integerValue >= 4;
     }];
+    NSNumber * shouldBeNil = [array swt_firstWhere:^BOOL (NSNumber *obj){
+        return obj.integerValue >= 10;
+    }];
     
     XCTAssertEqual(shouldBe2.integerValue, 2);
     XCTAssertEqual(shouldBe4.integerValue, 4);
+    XCTAssertNil(shouldBeNil);
 }
 
 @end
