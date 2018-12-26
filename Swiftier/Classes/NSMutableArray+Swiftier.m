@@ -3,14 +3,14 @@
 
 @implementation NSMutableArray (Swiftier)
 
-- (void)swt_forEach:(void (^)(id obj))block {
+- (void)swt_forEach:(__attribute__((noescape)) void (^)(id obj))block {
     NSParameterAssert(block != nil);
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         block(obj);
     }];
 }
 
-- (NSMutableArray *)swt_flatMap:(id (^)(id obj))block {
+- (NSMutableArray *)swt_flatMap:(__attribute__((noescape)) id (^)(id obj))block {
     NSParameterAssert(block != nil);
     let array = [NSMutableArray new];
     [self swt_forEach:^(id obj) {
@@ -22,7 +22,7 @@
     return array.copy;
 }
 
-- (NSMutableArray *)swt_map:(id (^)(id obj))block {
+- (NSMutableArray *)swt_map:(__attribute__((noescape)) id (^)(id obj))block {
     NSParameterAssert(block != nil);
     let array = [NSMutableArray new];
     [self swt_forEach:^(id obj) {
@@ -37,7 +37,7 @@
     return array.copy;
 }
 
-- (NSMutableArray *)swt_filter:(BOOL (^)(id obj))block {
+- (NSMutableArray *)swt_filter:(__attribute__((noescape)) BOOL (^)(id obj))block {
     NSParameterAssert(block != nil);
     let array = [NSMutableArray new];
     [self swt_forEach:^(id obj) {
@@ -48,6 +48,14 @@
     }];
     
     return array.copy;
+}
+
+- (nullable id)swt_firstWhere:(__attribute__((noescape)) BOOL (^)(id obj))block {
+    if (block == nil) { return self.firstObject; }
+    for (id obj in self) {
+        if (block(obj)) { return obj; }
+    }
+    return nil;
 }
 
 @end

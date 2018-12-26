@@ -50,6 +50,12 @@
     return array;
 }
 
-
+- (nullable id)swt_firstWhere:(__attribute__((noescape)) BOOL (^)(id obj))block {
+    if (block == nil) { return self.firstObject; }
+    for (id obj in self) {
+        if (block(obj)) { return obj; }
+    }
+    return nil;
+}
 
 @end
