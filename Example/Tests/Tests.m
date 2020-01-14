@@ -121,5 +121,23 @@
     XCTAssertNil(shouldBeNil);
 }
 
+- (void)testInitializeWith {
+    let string1 = [NSMutableString new];
+    withObject(string1, it, {
+        [it appendString:@"hello"];
+    });
+    XCTAssertTrue([string1 isEqualToString:@"hello"]);
+    
+    let string2 = withObject([NSMutableString new], it, {
+        [it appendString:@"hello"];
+    });
+    XCTAssertTrue([string2 isEqualToString:@"hello"]);
+    
+    let rect1 = withObject(CGPointMake(0, 0), it, {
+        it.x = 1;
+    });
+    XCTAssertEqual(rect1.x, 1);
+}
+
 @end
 

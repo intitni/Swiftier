@@ -21,6 +21,7 @@
 #import "SwiftierLetAndVar.h"
 #import "SwiftierSafeCopy.h"
 #import "SwiftierUnwrap.h"
+#import "With.h"
 
 FOUNDATION_EXPORT double SwiftierVersionNumber;
 FOUNDATION_EXPORT const unsigned char SwiftierVersionString[];
