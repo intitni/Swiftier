@@ -86,7 +86,7 @@
 
 - (void)testNSMutableArrayFlatMap {
     let array = [[NSMutableArray alloc] initWithObjects:@1, [NSNull null], @3, nil];
-    NSArray<NSNumber *> *new = [array swt_flatMap:^NSNumber*(NSNumber* obj){
+    NSArray<NSNumber *> *new = [array swt_compactMap:^NSNumber*(NSNumber* obj){
         return @(obj.intValue + 1);
     }];
     

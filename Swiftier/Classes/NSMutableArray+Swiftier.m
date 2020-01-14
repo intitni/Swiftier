@@ -10,7 +10,7 @@
     }];
 }
 
-- (NSMutableArray *)swt_flatMap:(__attribute__((noescape)) id (^)(id obj))block {
+- (NSMutableArray *)swt_compactMap:(__attribute__((noescape)) id (^)(id obj))block {
     NSParameterAssert(block != nil);
     let array = [NSMutableArray new];
     [self swt_forEach:^(id obj) {

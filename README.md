@@ -103,10 +103,18 @@ let filteredArray = [array swt_filter:^BOOL(NSNumber *number) {
 // prints: 1 2 3
 
 let array = @[@1, null, @3];
-let mappedArray = [array swt_flatMap:^AnotherType(NSNumber *number) {
+let mappedArray = [array swt_compactMap:^AnotherType(NSNumber *number) {
     return [AnotherType initWith:number];
 }];
 // result -> @[AnotherType(@1), AnotherType(@3)];
+```
+
+## With Object
+
+```objc
+let string2 = withObject([NSMutableString new], it, {
+    [it appendString:@"hello"];
+});
 ```
 
 ## Safe KeyPath
