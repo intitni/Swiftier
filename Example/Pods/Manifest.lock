@@ -1,5 +1,5 @@
 PODS:
-  - Swiftier (0.1.7)
+  - Swiftier (0.1.10)
 
 DEPENDENCIES:
   - Swiftier (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Swiftier: 252d4caa4ea3949c156192e1b5ce05825529032e
+  Swiftier: 78d6e155ca2eb89f185d241397690a77a3493857
 
 PODFILE CHECKSUM: c5e1ac1330bdad54197ad4efb755ab18195d64ee
 

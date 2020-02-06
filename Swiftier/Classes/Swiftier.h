@@ -18,6 +18,6 @@
 #import "SwiftierLetAndVar.h"
 #import "SwiftierSafeCopy.h"
 #import "SwiftierUnwrap.h"
-#import "With.h"
+#import "SwiftierDefer.h"
 
 #endif /* Swiftier_h */

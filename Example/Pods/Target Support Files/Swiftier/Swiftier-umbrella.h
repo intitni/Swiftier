@@ -15,13 +15,13 @@
 #import "Swiftier.h"
 #import "SwiftierBlock.h"
 #import "SwiftierBoxing.h"
+#import "SwiftierDefer.h"
 #import "SwiftierFastEnumeration.h"
 #import "SwiftierGuard.h"
 #import "SwiftierKeyPath.h"
 #import "SwiftierLetAndVar.h"
 #import "SwiftierSafeCopy.h"
 #import "SwiftierUnwrap.h"
-#import "With.h"
 
 FOUNDATION_EXPORT double SwiftierVersionNumber;
 FOUNDATION_EXPORT const unsigned char SwiftierVersionString[];

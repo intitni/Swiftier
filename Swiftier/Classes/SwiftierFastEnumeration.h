@@ -1,3 +1,5 @@
+// https://pspdfkit.com/blog/2017/even-swiftier-objective-c/
+
 @protocol SwiftierFastEnumeration <NSFastEnumeration>
 - (id)swt_enumeratedType;
 @end

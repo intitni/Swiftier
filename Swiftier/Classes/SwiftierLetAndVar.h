@@ -1,3 +1,5 @@
+// https://pspdfkit.com/blog/2017/even-swiftier-objective-c/
+
 #ifndef LetAndVar_h
 #define LetAndVar_h
 

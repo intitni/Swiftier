@@ -109,12 +109,16 @@ let mappedArray = [array swt_compactMap:^AnotherType(NSNumber *number) {
 // result -> @[AnotherType(@1), AnotherType(@3)];
 ```
 
-## With Object
+## Defer
 
 ```objc
-let string2 = withObject([NSMutableString new], it, {
-    [it appendString:@"hello"];
-});
+- (void)foo {
+    swt_defer { NSLog(@"2") };
+    NSLog(@"1");
+}
+// prints ->
+// 1
+// 2
 ```
 
 ## Safe KeyPath

@@ -15,16 +15,6 @@
 
 @implementation Tests
 
-- (void)setUp {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
 - (void)testNSArrayMap {
     let array = @[@1,@2,@3];
     NSArray<NSNumber *> *new = [array swt_map:^NSNumber*(NSNumber* obj){
@@ -121,23 +111,29 @@
     XCTAssertNil(shouldBeNil);
 }
 
-- (void)testInitializeWith {
-    let string1 = [NSMutableString new];
-    withObject(string1, it, {
-        [it appendString:@"hello"];
-    });
-    XCTAssertTrue([string1 isEqualToString:@"hello"]);
-    
-    let string2 = withObject([NSMutableString new], it, {
-        [it appendString:@"hello"];
-    });
-    XCTAssertTrue([string2 isEqualToString:@"hello"]);
-    
-    let rect1 = withObject(CGPointMake(0, 0), it, {
-        it.x = 1;
-    });
-    XCTAssertEqual(rect1.x, 1);
-}
+@end
+
+@interface DeferTests : XCTestCase
+
+@property (nonatomic) BOOL deferCalled;
 
 @end
 
+@implementation DeferTests
+
+- (void)setUp {
+    [super setUp];
+    self.deferCalled = NO;
+}
+
+- (void)tearDown {
+    XCTAssertTrue(self.deferCalled);
+    [super tearDown];
+}
+
+- (void)testDefer {
+    swt_defer { self.deferCalled = YES; };
+    XCTAssertFalse(self.deferCalled);
+}
+
+@end
