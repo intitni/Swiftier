@@ -14,8 +14,10 @@
     NSParameterAssert(block != nil);
     let array = [NSMutableArray new];
     [self swt_forEach:^(id obj) {
-        if (obj != nil && ![obj isEqual: [NSNull null]]) {
-            [array addObject: block(obj)];
+        if (obj == nil || [obj isEqual: [NSNull null]]) { return; }
+        id val = block(obj);
+        if (val != nil && ![val isEqual: [NSNull null]]) {
+            [array addObject:val];
         }
     }];
     
